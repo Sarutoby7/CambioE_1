@@ -1,0 +1,50 @@
+Manual Técnico:
+
+HTML (index.html):
+
+1.	Estructura Básica:
+o	Sección Principal: La estructura HTML contiene una única sección (<section>)
+    que alberga un título (<h1>), un formulario simple con un campo de entrada (<input>), y un botón (<button>).
+o	Campo de Entrada: El campo de entrada es de tipo texto,
+    donde el usuario puede introducir un código de color hexadecimal (por ejemplo, #ff5733)
+    para cambiar el color de fondo de la página.
+o	Botón de Acción: El botón activa el cambio de color al ser clicado.
+o	Script: El archivo JavaScript externo (script.js) está enlazado en la parte inferior del cuerpo
+    (<body>) para garantizar que el DOM esté completamente cargado antes de ejecutar el script.
+
+CSS (estilos.css):
+
+1.	Estilos Globales:
+o	Cuerpo de la Página: El body tiene una fuente estándar (Arial),
+    está centrado con texto alineado y tiene un color de fondo gris claro por defecto.
+
+2.	Estilos Específicos:
+o	Título (h1): El título se estiliza con un color oscuro para destacar.
+o	Sección Principal (section): Se centraliza la sección con un fondo blanco,
+    bordes redondeados y una ligera sombra para darle un aspecto de tarjeta.
+o	Campo de Entrada y Botón: Ambos tienen márgenes y padding para mantener un espaciado uniforme y
+    mejoran la usabilidad con bordes redondeados.
+o	Campo de Color (#colorFondo): El texto en el campo de color se convierte a
+    mayúsculas automáticamente para una mejor presentación de los códigos de color.
+
+JavaScript (script.js):
+
+1.	Obtención de Elementos del DOM:
+o	Variables: Se utilizan dos variables (botonCambiarColor y campoColorFondo)
+    para almacenar las referencias al botón y al campo de entrada, respectivamente.
+    Estas se obtienen mediante getElementById.
+
+2.	Evento click:
+o	EventListener: Se añade un eventListener al botón que escucha el evento click. Al hacer clic,
+    el valor del campo de entrada se lee y se almacena en la variable color.
+
+3.	Cambio de Estilo:
+o	Aplicación del Estilo: El valor obtenido del campo de entrada (color)
+    se utiliza para cambiar el color de fondo del body mediante la propiedad style.backgroundColor.
+
+Conclusión:
+Este ejercicio enseña cómo manipular el DOM para cambiar estilos dinámicamente usando JavaScript.
+Además, refuerza el uso de eventos y la interacción del usuario con la interfaz, en este caso,
+permitiéndole personalizar el aspecto de la página web en tiempo real.
+
+Github:
